@@ -166,9 +166,6 @@ async function onSignInWithGoogle() {
           </Button>  */}
            </Form>
         </CardContent>
-        <CardFooter className="text-center text-sm text-gray-500">
-          Não possui uma conta? <a href="#" className="text-[#027A48] hover:underline">Registre-se</a>
-        </CardFooter>
       </Card>
       </motion.div>
     </div>

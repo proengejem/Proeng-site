@@ -45,7 +45,7 @@ export default function Portfolio2() {
               transition={{ duration: 0.3 }}
             >
               <Image
-                src="/Estaca raiz.jpeg"
+                src="/Estaca Raiz.jpeg"
                 alt="Estaca Raíz Project Photo"
                 fill
                 className="object-cover"
