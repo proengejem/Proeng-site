@@ -63,7 +63,7 @@ export function ProjectHero() {
               x: { type: "spring", stiffness: 300, damping: 30 },
               opacity: { duration: 0.2 },
             }}
-            className="absolute h-[400px] w-full rounded-lg object-cover shadow-lg"
+            className="absolute h-[400px] w-full rounded-lg object-cover"
             alt={`Project image ${imageIndex + 1}`}
             onMouseEnter={() => setIsAutoPlaying(false)}
             onMouseLeave={() => setIsAutoPlaying(true)}
@@ -75,7 +75,7 @@ export function ProjectHero() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => paginate(-1)}
-          className="absolute left-0 top-1/2 z-10 -translate-y-1/2 bg-white/70 p-2 text-gray-800 shadow"
+          className="absolute left-0 top-1/2 z-10 -translate-y-1/2 bg-white/70 p-2 text-gray-800"
           aria-label="Previous image"
         >
           <ChevronLeft size={32} />
@@ -85,7 +85,7 @@ export function ProjectHero() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => paginate(1)}
-          className="absolute right-0 top-1/2 z-10 -translate-y-1/2 bg-white/70 p-2 text-gray-800 shadow"
+          className="absolute right-0 top-1/2 z-10 -translate-y-1/2 bg-white/70 p-2 text-gray-800"
           aria-label="Next image"
         >
           <ChevronRight size={32} />

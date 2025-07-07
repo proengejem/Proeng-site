@@ -1,34 +1,37 @@
 "use client";
+
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+
 const projectImages = [
-    "/Estaca Raiz.jpeg?height=600&width=1200",
-    "/Estaca Helice.jpeg?height=600&width=1200",
-    "/Solo Grampeado.jpeg?height=600&width=1200",
-    // "/placeholder.svg?height=600&width=1200",
+  "/Estaca Raiz.jpeg?height=600&width=1200",
+  "/Estaca Helice.jpeg?height=600&width=1200",
+  "/Solo Grampeado.jpeg?height=600&width=1200",
 ];
+
 export function ProjectHero2() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % projectImages.length);
   };
+
   const prevImage = () => {
     setCurrentImageIndex(
-      (prev) => (prev - 1 + projectImages.length) % projectImages.length,
+      (prev) => (prev - 1 + projectImages.length) % projectImages.length
     );
   };
+
   return (
-    
     <div className="relative h-[calc(100vh-4rem)] bg-gray-900">
-        
       <div className="absolute inset-0">
         <img
           src={projectImages[currentImageIndex]}
           alt={`Project image ${currentImageIndex + 1}`}
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-40" />
       </div>
+
       <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
         <h1 className="mb-2 text-4xl font-bold">Nome obra 01</h1>
         <p className="text-lg">
@@ -36,6 +39,7 @@ export function ProjectHero2() {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
+
       <button
         onClick={prevImage}
         className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/20 p-2 text-white transition-colors hover:bg-white/40"
@@ -50,6 +54,7 @@ export function ProjectHero2() {
       >
         <ChevronRight size={24} />
       </button>
+
       <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 space-x-2">
         {projectImages.map((_, index) => (
           <button

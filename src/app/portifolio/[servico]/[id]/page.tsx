@@ -229,7 +229,7 @@ const ObraDetails = ({
               // className="w-full h-[85vh] object-contain"
                width={800} height={600}
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div className="absolute inset-0"></div>
             <button
               onClick={handlePrev}
               className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-black p-3 rounded-full shadow hover:scale-110 transition-transform"
@@ -258,7 +258,7 @@ const ObraDetails = ({
                 />
               ))}
             </div>
-            <div className="absolute bottom-4 left-6 text-white z-10">
+            <div className="absolute bottom-4 left-6 text-black z-10">
               <h1 className="text-3xl font-bold">{obra?.name}</h1>
               <p className="text-lg mt-2">{obra?.description}</p>
             </div>
